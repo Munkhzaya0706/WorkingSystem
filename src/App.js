@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { useRoutes } from "react-router-dom";
+import PaymentTentech from "./pages/PaymentTentech/PaymentTentech";
+import Success from "./pages/ResponceSuccess/Success";
+import Failed from "./pages/ResponceFailed/Failed";
+import PayForm from "./pages/PayForm/PayFrom";
+import { PayValuesStore } from "./context/PayFormContext";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  let element = useRoutes([
+    { path: "/", element: <PaymentTentech /> },
+    { path: "/responce/success", element: <Success /> },
+    { path: "/responce/failed", element: <Failed /> },
+    { path: "/payment", element: <PayForm /> },
+  ]);
+
+  return <PayValuesStore>{element}</PayValuesStore>;
 }
 
 export default App;

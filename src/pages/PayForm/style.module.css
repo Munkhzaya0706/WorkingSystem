@@ -1,0 +1,115 @@
+.container {
+  max-width: 60%;
+  margin: 20px;
+}
+.select {
+  width: 100%;
+  padding: 30px;
+}
+.box {
+  overflow: auto;
+  max-width: 80%;
+  height: 110px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.boxTitle {
+  max-width: 100%;
+  height: 90px;
+  border-radius: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #61b55c;
+  text-shadow: 2px 3px 5px #338747;
+}
+
+.mostMoney {
+  overflow: auto;
+  min-width: 90px;
+  height: 70px;
+  padding: 10px;
+  background: url(../../images/mostmoney.lil.png) no-repeat center center/cover;
+}
+
+.social {
+  overflow: auto;
+  min-width: 70px;
+  height: 50px;
+  padding: 20px;
+  background: url(../../images/social.png) no-repeat center center/cover;
+}
+.bank {
+  overflow: auto;
+  min-width: 90px;
+  height: 65px;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 10px;
+  background: url(../../images/Visa.png) no-repeat center center/cover;
+}
+.criteria {
+  max-width: 60%;
+  max-height: 100%;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.criteria h4 {
+  font-size: 14px;
+}
+
+@media (max-width: 1650px) {
+  .mostMoney {
+    min-width: 60px;
+    height: 40px;
+    padding: 5px;
+  }
+  .title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  .social {
+    min-width: 60px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .bank {
+    min-width: 60px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+}
+@media (max-width: 1000px) {
+  .mostMoney {
+    min-width: 50px;
+    height: 40px;
+    padding: 5px;
+  }
+  .title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  .social {
+    min-width: 50px;
+    height: 40px;
+    padding: 20px;
+  }
+  .bank {
+    min-width: 60px;
+    height: 45px;
+    margin-top: 10px;
+
+    padding: 0px;
+  }
+}

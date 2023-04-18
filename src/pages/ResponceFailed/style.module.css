@@ -1,0 +1,35 @@
+.box {
+  overflow: auto;
+  min-width: 150px;
+  height: 150px;
+
+  background: url(../../images/failed.png) no-repeat center center/cover;
+  border-radius: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 60%;
+  margin: 0px 20px;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 20px 0px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+.ebarimt {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 300px;
+}
+@media (max-width: 800px) {
+  .flex h1 {
+    font-size: 15px;
+  }
+}
